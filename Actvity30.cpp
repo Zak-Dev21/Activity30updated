@@ -9,10 +9,10 @@ string TextBox::getValue() const {
     return value;
 }
 
-void TextBox::setValue(const string& newValue) {
-    value = newValue;
+void TextBox::setValue(const string& value) {
+    this->value = value;
 }
 
 void TextBox::displayText() const {
-    cout << "This is the value: " << value << endl;
+    cout << "This is the value: " << getValue() << endl;
 }
