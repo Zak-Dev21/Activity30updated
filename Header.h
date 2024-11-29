@@ -11,8 +11,8 @@ private:
     string value;  // Private attribute to store text
 
 public:
-    // Default constructor initializes value to an empty string
-    TextBox() : value("") {}
+    // Default constructor
+    TextBox() = default;
 
     // Explicit constructor that initializes value with a given string
     explicit TextBox(const string& startValue) : value(startValue) {}
